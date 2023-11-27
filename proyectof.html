@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+    body {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .icono {
+      width: 500px;
+      height:130px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    h2, label, input, button {
+      margin: 5px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+  </style>
+    <script>
+    function mostrarDatos() {
+      var nombre = document.getElementById('nombre').value;
+      var apellido = document.getElementById('apellido').value;
+      var correo = document.getElementById('Correo').value; // Corregir el id a 'Correo'
+
+      alert('Nombre: ' + nombre + '\nApellido: ' + apellido + '\nCorreo: ' + correo);
+
+      window.location.href = 'pagina2.html';
+    }
+  </script>
+</head>
+<body>
+  <img src="https://logosarchive.com/wp-content/uploads/2021/12/Harvard-University-logo.svg" alt="Icono de la Academia de Matemáticas" class="icono">
+  <h1>Academia de matemáticas</h1>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/_6uyQISZvBc?si=FPTHlbpbL9m8nDGi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ 
+  <div class="container">
+    <h2>Curso de matemáticas intensivo</h2>
+    <p>El curso "Intensivo de Matemáticas" es un programa educativo diseñado para estudiantes que desean profundizar sus conocimientos en matemáticas y mejorar sus habilidades en áreas como álgebra, trigonometría, cálculo y geometría.</p>
+    <p>Este curso está diseñado para ser completado en un corto período de tiempo y se enfoca en los conceptos fundamentales y las habilidades operativas necesarias para enfrentar desafíos matemáticos complejos.</p>
+    <div>
+      <h2>Si deseas conocer más, inscríbete</h2>
+      <h2>Ingreso de datos</h2>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre"><br><br>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido"><br><br>
+      <label for="correo">Correo:</label>
+      <input type="text" id="Correo"><br><br>
+      <button onclick="mostrarDatos()">Ingresar</button>
+    </div>
+    </div>
+    <p>Imagenes utilizadas con fines ilustrativos sin animos de lucro</p>
+    <div>
+</div>
+</body>
+</html>

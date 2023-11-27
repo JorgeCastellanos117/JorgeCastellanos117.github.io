@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registro</title>
+<style>
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/06/15/29/math-1500720_1280.jpg");
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    color: #00539f;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+  }
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00539f; /* Color del texto de las etiquetas */
+  }
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  button[type="button"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00539f;
+    color: white;
+    cursor: pointer;
+  }
+  button[type="button"]:hover {
+    background-color: #003366;
+  }
+  .centrado {
+    text-align: top;
+  }
+</style>
+  <script>
+    function validarUsuario() {
+      var usuario = document.getElementById("usuario").value;
+      var contrasena = document.getElementById("contrasena").value;
+      if (usuario === "alumno" && contrasena === "2023") {
+        window.location.href = "curso.html";
+      } else {
+        alert("Usuario y/o contraseña incorrectos");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 class="centrado">Formulario de Registro</h1>
+  
+  <form class="centrado">
+    <label for="usuario">Usuario:</label>
+    <input type="text" id="usuario">
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena">
+    <button type="button" onclick="validarUsuario()">Ingresar</button>
+  </form>
+ 
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuestionario de Matemáticas</title>
+  <style>
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/06/15/29/math-1500720_1280.jpg");
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    color: #00539f;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+
+    .pregunta {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #00539f; /* Color del texto de las etiquetas */
+    }
+  </style>
+  <script src="cuestionario.js"></script>
+</head>
+<body>
+  <h1>Cuestionario de Matemáticas</h1>
+  <form>
+    <div class="pregunta">
+      <label for="pregunta1">Pregunta 1: ¿Cuánto es 5 + 5?</label><br>
+      <label for="pregunta1_opcion1"><input type="radio" id="pregunta1_opcion1" name="pregunta1" value="opcion1"> 10</label><br>
+      <label for="pregunta1_opcion2"><input type="radio" id="pregunta1_opcion2" name="pregunta1" value="opcion2"> 20</label><br>
+      <label for="pregunta1_opcion3"><input type="radio" id="pregunta1_opcion3" name="pregunta1" value="opcion3"> 30</label><br>
+    </div>
+
+    <div class="pregunta">
+      <label for="pregunta2">Pregunta 2: ¿Cuál es la raíz cuadrada de 16?</label><br>
+      <label for="pregunta2_opcion1"><input type="checkbox" id="pregunta2_opcion1" name="pregunta2" value="opcion1"> 4</label><br>
+      <label for="pregunta2_opcion2"><input type="checkbox" id="pregunta2_opcion2" name="pregunta2" value="opcion2"> 6</label><br>
+      <label for="pregunta2_opcion3"><input type="checkbox" id="pregunta2_opcion3" name="pregunta2" value="opcion3"> 8</label><br>
+    </div>
+
+    <div class="pregunta">
+      <label for="pregunta3">Pregunta 3: ¿Cuál es el valor de x en la ecuación 2x + 3 = 11?</label><br>
+      <input type="text" id="pregunta3">
+    </div>
+
+    <div class="pregunta">
+      <label for="pregunta4">Pregunta 4:¿Cuál es el resultado de la multiplicación de (x + 3)(x - 2)? </label><br>
+      <input type="text" id="pregunta4">
+    </div>
+
+    <div class="pregunta">
+      <label for="pregunta5">Pregunta 5:¿Cuál es la ecuación de la línea que pasa por los puntos (2, 3) y (4, 7)? </label><br>
+      <input type="text" id="pregunta5">
+    </div>
+
+    <button type="button" onclick="calcularPuntaje()">Calcular puntaje</button>
+  </form>
+</body>
+</html>
